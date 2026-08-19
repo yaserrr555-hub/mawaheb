@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>مواهب و أفكار - من ابداع وإبتكار المعلم الراحل فهد علي الكريديس</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin:0; padding:0; height: 100%; width: 100%; overflow: hidden; background:#0f172a; }
+body{font-family:"Amiri", serif;color:#0f172a;direction:rtl;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+
+/* تصميم متجاوب تماماً لجميع الأجهزة (كمبيوتر، آيباد، جوال) لملء الشاشة بدون فراغات فاضية */
+.book-container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1100px;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.6);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+.page-wrapper.active { display: flex; animation: fadeIn 0.25s ease; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.99); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.frame{width:100%;height:100%;border:3px solid #b8860b;padding:2vh 2.5vw;position:relative;background:#fffdf9;display:flex;flex-direction:column;justify-content:space-between;}
+.frame:after{content:"";position:absolute;inset:6px;border:1px solid #d4af37;pointer-events:none}
+.cover .frame{border:none;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:5vw;color:#fff;justify-content:center;align-items:center;}
+.cover .frame:after{display:none}
+
+.content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 15px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1,h2,h3,p,ol,table{position:relative;z-index:2;margin-top:0}
+h2.section{font-size:1.2rem;color:#1e3a8a;border-bottom:2.5px solid #d4af37;padding-bottom:5px;margin-bottom:12px;margin-top:4px;font-weight:700}
+p{font-size:1.05rem;line-height:1.9;margin:0 0 10px;text-align:justify}
+.center{text-align:center!important}.small{font-size:0.85rem}.bold{font-weight:700}.gold{color:#fbbf24}.navy{color:#1e3a8a}
+
+.innovative-badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(251,191,36,.4);padding:6px 20px;border-radius:20px;font-size:0.9rem;color:#fbbf24;margin-bottom:12px}
+.cover-title{font-size:2.8rem;font-weight:900;color:#fff;margin:8px 0;text-shadow:0 3px 10px rgba(0,0,0,.4);text-align:center;}
+.cover-sub{font-size:1.2rem;color:#cbd5e1;margin-bottom:15px;font-weight:600;text-align:center;}
+.cover-card{background:rgba(15,23,42,.75);border:1.5px solid rgba(129,140,248,.3);border-radius:14px;padding:14px;margin-top:10px;width:85%;text-align:center;}
+.bulb-icon-box{width:60px;height:60px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;border:3px solid #fff;box-shadow:0 0 25px rgba(245,158,11,.5)}
+
+.quote{background:#fff7df;border:1.5px solid #d4af37;border-radius:10px;padding:10px 14px;margin-bottom:10px;color:#243044;font-size:1rem;line-height:1.8}
+.footer{position:relative;z-index:3;text-align:center;padding-top:6px;margin-top:8px;border-top:2px solid #cbd5e1;font-size:0.85rem;color:#1e3a8a;display:flex;justify-content:space-between;align-items:center}
+.cover .footer{border-top:1.5px solid rgba(255,255,255,.2);color:#94a3b8}
+.footer .num{display:inline-block;min-width:24px;padding:2px 5px;border-bottom:2px solid #b8860b;font-weight:700;font-size:0.95rem}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-size:0.85rem}
+.grid3 span{padding:5px 3px;border:1.5px solid #d4af37;border-radius:6px;background:#fffdf5;text-align:center}
+table{width:100%;border-collapse:collapse;font-size:0.95rem;margin:8px 0}
+th,td{border:1.5px solid #64748b;padding:6px 8px;vertical-align:top}
+th{background:#f1f5f9;font-size:1rem}
+ol{font-size:1.02rem;line-height:1.85;margin-bottom:10px;padding-right:20px;}
+ol li { margin-bottom: 6px; }
+
+.contest-card{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:2px solid #fbbf24;border-radius:12px;padding:16px;color:#fff;margin:8px 0;text-align:center;width:100%;}
+.stat-row{display:flex;justify-content:space-around;gap:8px;margin-top:10px}
+.stat-box{flex:1;background:rgba(255,255,255,0.07);border:1px solid rgba(251,191,36,0.3);border-radius:8px;padding:8px}
+
+.interactive-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px dashed #b8860b;
+    background: rgba(255, 248, 220, 0.5);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 6px 8px;
+    margin: 4px 0 10px;
+    border-radius: 4px;
+    outline: none;
+}
+.interactive-input:focus { background: #fff; border-bottom: 2px solid #1e3a8a; }
+
+.lines textarea {
+    width: 100%;
+    height: 15mm;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    background: repeating-linear-gradient(to bottom,transparent 0,transparent 5.8mm,#cbd5e1 6mm,transparent 6.2mm);
+    background-color: #fffdf9;
+    padding: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: block;
+}
+.lines textarea:focus { border-color: #1e3a8a; }
+
+.lines-large textarea {
+    width: 100%;
+    height: 30mm;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    background: repeating-linear-gradient(to bottom,transparent 0,transparent 5.8mm,#cbd5e1 6mm,transparent 6.2mm);
+    background-color: #fffdf9;
+    padding: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: block;
+}
+.lines-large textarea:focus { border-color: #1e3a8a; }
+
+.drawing-canvas {
+    width: 100%;
+    height: 25mm;
+    background: #fff;
+    border: 2px dashed #b8860b;
+    border-radius: 8px;
+    margin: 6px 0 10px 0;
+    touch-action: none;
+    cursor: crosshair;
+    display: block;
+}
+
+.action-box {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.action-btn {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.action-btn:hover { background: #15803d; }
+.action-btn.import { background: #2563eb; }
+
+.save-indicator {
+    color: #16a34a; font-size: 0.85rem; font-weight: bold; opacity: 0; transition: opacity 0.3s; display:inline-block;
+}
+.save-indicator.show { opacity: 1; }
+
+.nav-bar {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+    background: rgba(15,23,42,.95);
+    padding: 8px 18px;
+    border-radius: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+.nav-btn {
+    background: #1e3a8a;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.nav-btn:hover { background: #2563eb; }
+.nav-btn.home { background: #f59e0b; color: #0f172a; }
+.page-indicator { color: #fbbf24; font-weight: bold; display: flex; align-items: center; font-size: 0.95rem; }
+</style>
+
+<!-- مكتبات فايربيس السحابية للعداد والمنتدى -->
+<script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js" type="module"></script>
+</head>
+<body>
+
+<div class="book-container">
+
+<!-- 1: الغلاف -->
+<section class="page-wrapper cover active" data-page="1">
+    <div class="frame">
+        <div style="position:absolute;width:350px;height:350px;border:1px dashed rgba(251,191,36,.25);border-radius:50%;top:5%;right:-15%;pointer-events:none;"></div>
+        <div class="content centered">
+            <div style="background:rgba(15,23,42,.8);border:2px solid rgba(251,191,36,.4);border-radius:14px;padding:12px 18px;color:#fff;margin-bottom:15px;max-width:100%;text-align:center;">
+                <div class="small" style="color:#94a3b8;margin-bottom:4px;">قال رسول الله ﷺ:</div>
+                <strong class="gold" style="font-size:1.05rem;">«إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقة جارية، أو علم يُنتفع به، أو ولد صالح يدعو له»</strong>
+            </div>
+            <div class="bulb-icon-box">
+                <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+            </div>
+            <span class="innovative-badge">مواهب و أفكار - من ابداع وإبتكار المعلم الراحل فهد علي الكريديس</span>
+            <h1 class="cover-title">مواهب و أفكار</h1>
+            <div class="cover-sub">من ابداع وإبتكار المعلم الراحل فهد علي الكريديس</div>
+            <div class="cover-card">
+                <div class="small" style="color:#94a3b8;">المعلم الملهم</div>
+                <h2 style="margin:4px 0;font-size:1.6rem;color:#fbbf24;font-weight:700;">أ / فهد بن علي الكريديس</h2>
+                <div class="small" style="color:#e2e8f0;margin-top:4px;font-size:0.95rem;">مجمع الأمير سلطان ببريدة • القسم المتوسط</div>
+            </div>
+        </div>
+        <div class="footer"><span style="color:#cbd5e1;">مواهب و أفكار</span><span class="num" style="border-color:#94a3b8;color:#fff;">١</span></div>
+    </div>
+</section>
+
+<!-- 2: صفحة تتبع الأجهزة -->
+<section class="page-wrapper" data-page="2">
+    <div class="frame">
+        <div class="content centered" style="gap:12px;">
+            <h2 class="section center" style="font-size:1.4rem;color:#1e3a8a;border:none;">🏆 تفاعل زوار الكتاب</h2>
+            <p class="center" style="font-size:1.05rem;">أهلاً بك في هذا الإصدار التفاعلي لإرث المعلم الراحل فهد الكريديس رحمه الله.</p>
+            
+            <div class="contest-card">
+                <div style="font-size:1.1rem;font-weight:bold;color:#fbbf24;margin-bottom:10px;">نظام التعرف والحفظ التلقائي:</div>
+                <p style="font-size:0.95rem; color:#e2e8f0; line-height:1.6; margin-bottom:12px;">يتعرف النظام على جهازك تلقائياً لضمان حفظ إجاباتك ورسوماتك، بحيث لو عدت لاحقاً ستجدها محفوظة.</p>
+                <div style="display:flex;gap:10px;justify-content:center;margin-bottom:10px;">
+                    <button onclick="startMode('contest')" style="background:#2563eb;color:#fff;border:none;padding:8px 16px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:0.95rem;">🎯 بدء التصفح والحل</button>
+                </div>
+                <div id="modeStatus" style="color:#4ade80;font-size:0.95rem;font-weight:bold;margin-bottom:8px;min-height:20px;"></div>
+
+                <div class="stat-row">
+                    <div class="stat-box">
+                        <div style="font-size:0.85rem;color:#cbd5e1;">إجمالي الزوار</div>
+                        <div style="font-size:1.5rem;font-weight:bold;color:#fbbf24;" id="liveVisitors">1</div>
+                    </div>
+                    <div class="stat-box">
+                        <div style="font-size:0.85rem;color:#cbd5e1;">أتموا التصفح</div>
+                        <div style="font-size:1.5rem;font-weight:bold;color:#4ade80;" id="liveCompleted">0</div>
+                    </div>
+                </div>
+            </div>
+            <p class="small center" style="color:#64748b;">العداد يحسب الأجهزة الجديدة بدقة دون تكرار للزائر الواحد.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">2</span></div>
+    </div>
+</section>
+
+<!-- 3: مقدمة الإصدار -->
+<section class="page-wrapper" data-page="3">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section center">مقدمة الإصدار</h2>
+            <p class="center bold" style="font-size:1.15rem;">بسم الله الرحمن الرحيم</p>
+            <p>هناك أشخاص لا يغيبون حقًا… حتى لو غابت أجسادهم. يبقى حضورهم في الذاكرة، في المواقف، في الكلمات التي قالوها يومًا، وفي الأثر الذي زرعوه دون أن ينتظروا مقابلًا. وبعضهم يرحل، لكن يترك خلفه حياة كاملة من المعنى.</p>
+            <p>قد تكون صفحات «مواهب وأفكار» قليلة، لكن أثر صاحبها أكبر من عدد صفحاتها.</p>
+            <p>ولهذا جاءت هذه المقدمة لتعرّف الإنسان الذي يقف خلفها، والمعلم الذي عاش للعلم والتعليم، وترك أثرًا في طلابه وأسرته وكل من عرفه.</p>
+            <p>فهذا العمل، وإن كان الكتيب صغيرًا في حجمه، فإنه يحمل شيئًا من فكره وشغفه ورسالته، ويشهد على أن بعض الأعمال لا تُقاس بعدد صفحاتها، وإنما بما تتركه من أثر.</p>
+            <p class="center bold" style="font-size:1.05rem;">قد يكون الكتيب قصيرًا، لكن أثر صاحبه عظيم.</p>
+            <p class="center" style="font-size:1rem;">ولهذا أردنا قبل أن نقول: هذا كتاب فهد الكريديس، <strong class="navy">سنقول أولًا: اعرف فهد، ثم اقرأ كلماته.</strong></p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">3</span></div>
+    </div>
+</section>
+
+<!-- 4 -->
+<section class="page-wrapper" data-page="4">
+    <div class="frame">
+        <div class="content">
+            <p>ومن بين تلك البصمات التي لا تُنسى، خرجت هذه المذكرة من بين أوراق الأستاذ فهد بن علي الكريديس رحمه الله، الذي احتفظ بها لأكثر من عقد من الزمن؛ المعلم الذي لم يكن يرى التعليم وظيفة، بل رسالة، تمثّلت في نموذج المربي والمعلم والملهم.</p>
+            <p>جاءت هذه الصفحات تحت عنوان «مواهب وأفكار»، وكأنها لم تُكتب فقط للطلاب… بل كُتبت لتوقظ فيهم الإنسان قبل المعلومة، والعقل قبل الإجابة.</p>
+            <p><strong>وهنا تجدر الإشارة</strong> إلى أن عنوان «مواهب وأفكار» ليس من ابتكار الأستاذ فهد رحمه الله، بل هو عنوان أصيل يعود إلى الأستاذ <strong style="font-weight:700;">صالح العريض</strong>، الذي سبق إلى صياغته واستخدامه في سياق تربوي وفكري. وقد قام الأستاذ فهد باقتباس العنوان وتوظيفه ضمن عمله التربوي، إيمانًا منه بعمق دلالته وملاءمته لرؤيته التعليمية القائمة على تنمية التفكير وصناعة الإبداع.</p>
+            <p>لم تكن هذه الأوراق مجرد مادة دراسية، بل كانت روح معلم يؤمن أن السؤال أهم من الجواب، وأن التفكير أعمق من الحفظ، وأن داخل كل طالب شرارة تنتظر من يوقظها.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">4</span></div>
+    </div>
+</section>
+
+<!-- 5 -->
+<section class="page-wrapper" data-page="5">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">سيرة معلم… لا تُقاس بالسنوات بل بالأثر</h2>
+            <p>لم يكن الأستاذ فهد بن علي الكريديس رحمه الله مجرد معلم عابر، بل كان صاحب أثر واضح في طلابه وزملائه، جمع بين العلم والتطوير المستمر، وحرص على تنمية مهاراته وخبراته طوال مسيرته التعليمية.</p>
+            <p>أكثر من عشرين عامًا قضاها في التعليم والتدريب، تنقّل خلالها بين المجمعة ومجمع الأمير سلطان ببريدة، حيث أسهم في بناء جيل من الطلاب الذين واصلوا مسيرتهم في مجالات متعددة.</p>
+            <p>وفي تلك المرحلة داخل مجمع الأمير سلطان ببريدة، برزت نقطة تقاطع علمي وفكري لافتة بينه وبين الإعلامي والباحث في العلوم والفلك خالد الزعاق، حيث جمعتهما بيئة تعليمية واحدة واهتمام مشترك بالعلوم الطبيعية ورصد الظواهر الكونية.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">5</span></div>
+    </div>
+</section>
+
+<!-- 6: مؤلفاته وإسهاماته المعرفية -->
+<section class="page-wrapper" data-page="6">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">مؤلفاته وإسهاماته المعرفية</h2>
+            <p>عرف عن الأستاذ فهد رحمه الله شغفه العميق بالعلم والمعرفة في شتى المجالات؛ فلم تقتصر جهوده على قاعات الدرس، بل امتدت لتشمل إعداد وجمع العديد من الكتب والمجلات التي كان يقوم بتعليم الحضور عليها في دوراته المتعددة.</p>
+            <p>ونظراً لعمق ثقافته واتساع مداركه، فقد عمل باقتدار في إحدى الجمعيات المختصة بالشأن الأسري، مسهماً في توجيه وبناء الأسر والمجتمع.</p>
+            <p>وقد قام رحمه الله بإعادة صياغة، صيانة، وتطوير العديد من المراجع المتقدمة للكتّاب السابقين، مضيفاً إليها من خبراته التربوية ورؤيته الإبداعية الخاصة، ومن أبرزها:</p>
+            <p><strong>1. القبعات السبع</strong> (تطوير وإثراء لرؤية مهارات التفكير).<br>
+               <strong>2. نظرية تريز</strong> (في الحلول الإبداعية للمشكلات).<br>
+               <strong>3. مجلة العلوم المصورة</strong> (كوسيلة تثقيفية علمية مبسطة).</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">6</span></div>
+    </div>
+</section>
+
+<!-- 7: جذور لا تنسى -->
+<section class="page-wrapper" data-page="7">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">جذور لا تُنسى… وبرٌّ أضاء الحياة</h2>
+            <p>كان خلف هذا المعلم الفاضل والدان كريمان كان لهما أثر عظيم في تكوين شخصيته الطاهرة وجميل خصاله؛ والده المرحوم بإذن الله <strong><span style="font-size: 1.08em;">علي فهد الكريديس</span></strong>، ووالدته الحنونة <strong><span style="font-size: 1.08em;">حصة محمد الخربوش</span></strong> حفظها الله وأمدّ في عمرها.</p>
+            <p>وإن ما نشأت عليه الأسرة كاملة من صلاح وأثر عظيم، ما هو إلا امتداد لتلك التربية الصالحة من هذه الأم العظيمة وزوجها المرحوم علي، اللذين أجمع الجميع على حبهما ومعرفة الناس بهما كأصحاب صلة رحم وتربية طيبة وسيرة عطرة، وهذا ما عُرف عن أسرتهم الكريمة.</p>
+            <p>لقد كان فهد رحمه الله صاحب خلق عالٍ، بشوشاً، وودوداً مع الجميع، وحمل أمانة الوقف بعد والده فكان جديرًا بها، يده ممدودة بالخير ومسارعة في مساعدة المساكين والمحتاجين.</p>
+            <div class="quote">
+                <p class="center gold" style="font-size:0.95rem;color:#b8860b;margin:0;">«عاش باراً طائعاً، نقياً تقياً، كريماً باليد والوجه، فترك غرساً طيباً لا يذبل»</p>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">7</span></div>
+    </div>
+</section>
+
+<!-- 8 -->
+<section class="page-wrapper" data-page="8">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">صاحب الأثر… والقلب النقي</h2>
+            <p>كان فهد رحمه الله بحرًا من النقاء، عُرف بدينه المتين وخلقه الرفيع، ومحافظته التامة على الصلاة في أوقاتها، فلم يكن يشغله عنها شاغل، حتى في أشد لحظات مرضه وتعبه، كانت الصلوات قرة عينه ورباط روحه.</p>
+            <p>عاش رحيمًا بالناس، لينًا في معاملته، مبتسمًا لا تفارق الابتسامة محياه مهما اشتدت الظروف. كان يسعى في قضاء حوائج المساكين والمحتاجين خفية، يرجو ما عند الله، ولا يبتغي سوى رضاه.</p>
+            <p class="bold gold center" style="font-size:1.15rem;color:#b8860b;margin-top:6px;">رحمك الله يا أبا علي… يا من أودعت في قلوبنا طهر الأخلاق وعظم الأثر.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">8</span></div>
+    </div>
+</section>
+
+<!-- 9: ذكرى أبو راكان -->
+<section class="page-wrapper" data-page="9">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">ذكرى الغالي… الأخ محمد علي الكريديس (أبو راكان)</h2>
+            <p>وإذ نخلد سيرة أخينا ومعلمنا فهد رحمه الله، لا يمكن أن ننسى شقيقه الغالي المرحوم بإذن الله <strong>محمد علي الكريديس (أبو راكان)</strong>، الذي انتقل إلى رحمة الله تاركاً خلفه أثراً طيباً وسيرة عطرة.</p>
+            <p>لقد كان أبو راكان صاحب خلق عظيم وسمعة طيبة، لم يكن يبتعد عن أخيه فهد في مناقب الخير، بل كان مثالاً للرجل الخدوم، المحب للجميع، والدائم الحرص على صلة الرحم وجمع القلوب على المحبة والصفاء.</p>
+            <p>وإن كان هذا الكتيّب مخصصاً لأثر فهد، فإن قلوبنا تظل تذكر كل الأوفياء من راحلينا. نسأل الله العلي القدير أن يغفر لوالدنا <strong>علي فهد الكريديس</strong>، ولأبي راكان ولأبي علي، وأن يسكنهم فسيح جناته، وأن يجعل قبورهم روضة من رياض الجنة، وأن يجمعنا بهم في مستقر رحمته.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">9</span></div>
+    </div>
+</section>
+
+<!-- 10 -->
+<section class="page-wrapper" data-page="10">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section" style="font-size:1.3rem;">سعادة المهندس ياسر… كلمة بقيت في الذاكرة</h2>
+            <p>ولأن أثر أخي الأستاذ فهد رحمه الله لم يكن محصورًا في طلابه أو في المدرسة، فقد امتد أثره إلى أسرته وأقاربه ومن حوله، وكان لي معه موقف شخصي بقي عالقًا في الذاكرة.</p>
+            <p>حين علم بنجاحي وحصولي على الدبلوم، حين كنت أحمل لقب «الفني» رسميًا، كان يناديني بكل فخر: «المهندس ياسر».</p>
+            <p>ثم جاء يوم تخرجي من مرحلة البكالوريوس، فازداد فخره بي، ولم يعد يكتفي بأن يناديني «المهندس ياسر»، بل كان يقولها بلهجة يملؤها الفخر والاعتزاز: «سعادة المهندس ياسر».</p>
+            <p class="bold gold center" style="font-size:1.15rem;color:#b8860b;margin-top:6px;">رحمك الله يا فهد، فقد كنت تناديني بما أحب أن أكونه، وتفرح بي قبل أن أفرح بنفسي.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">10</span></div>
+    </div>
+</section>
+
+<!-- 11: أوفياء الدرب -->
+<section class="page-wrapper" data-page="11">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">أوفياء الدرب… ورفاق المسيرة</h2>
+            <p class="small" style="font-size:0.9rem;">وفي حياته، كان له رفقاء درب وأصدقاء أوفياء شاركوه مراحل مختلفة من حياته:</p>
+            <div class="grid3">
+                <span>النسيب والأخ محمد بن صالح المزيني</span>
+                <span>فهد الكريديس (ابن العم)</span>
+                <span>حسين صالح الخربوش</span>
+                <span>عبدالعزيز الفايز</span>
+                <span>سويلم الفريدي</span>
+                <span>فهد المرشد</span>
+                <span>موسى الخربوش</span>
+                <span>عدنان اليحيى</span>
+                <span>صالح العبدالمنعم</span>
+                <span>محمد الخليفي إبن العمة</span>
+                <span>أنس الخربوش</span>
+                <span>يوسف الخربوش</span>
+                <span>عبدالعزيز الهويمل</span>
+                <span>خالد صالح الخربوش</span>
+                <span>خالد عبدالله الخربوش</span>
+                <span>عبدالسلام الخربوش</span>
+                <span>ثامر الرقيبة</span>
+                <span>سليمان الخضيري</span>
+                <span>يوسف الحميدان</span>
+                <span>بدر الخربوش</span>
+                <span>سطام الخربوش</span>
+                <span>عادل الخربوش</span>
+                <span>خالد العجمي</span>
+                <span>حمد الهويمل</span>
+            </div>
+            <p class="small" style="font-size:0.85rem;margin-top:4px;color:#475569;text-align:center;">وهناك أناس كثر ممن رافقوا درب فقيدنا الغالي ولم يسعفنا الحصر لذكرهم، فلكل صديقٍ وفّيٍّ حفظ عهده ولم ينساها يوماً، جزاه الله عن وفائه خير الجزاء.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">11</span></div>
+    </div>
+</section>
+
+<!-- 12: صفحة أبو عادل -->
+<section class="page-wrapper" data-page="12">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">محمد السيد نور الدين .. وفاءٌ يتجدد ويسبق الجميع</h2>
+            <p>ومن المواقف الإنسانية التي حُفرت في الذاكرة، ما كان من الأخ الفاضل <strong>محمد السيد</strong> المكنى بـ <strong>أبو عادل</strong>، وهو من مصر الحبيبة.</p>
+            <p>عُرف الأستاذ <strong>فهد الكريديس (أبو علي)</strong> رحمه اللّٰه، وأخوه <strong>أبو عادل</strong> بطيب الصحبة وصدق الإخاء؛ إذ ضرب أبو عادل نموذجاً نادراً في الوفاء والوقوف الصادق خلال فترة مرض فقيدنا الغالي أبي علي، فكان ينوب ويسعى بالخدمة والمساندة بكل محبة ورضاء.</p>
+            <p>وما يثير الإجلال أن أبا عادل ما زال حريصاً على تقديم الخير وأوجه البر لأبي علي وكأن أبا علي ما زال حيًّا بيننا؛ فهو حتى يومنا هذا يتفقد الأسرة ويقوم على خدمة الوالدة الكريمة ورعايتها بكل إخلاص، مجسّداً معنى الأخوة الحقيقية التي لا تقطعها الأيام ولا يغيبها الرحيل. فجزاه اللّٰه عنا وعن فقيدنا خير الجزاء.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">12</span></div>
+    </div>
+</section>
+
+<!-- 13: مقدمة المذكرة الأصلية -->
+<section class="page-wrapper" data-page="13">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">مقدمة المذكرة الأصلية</h2>
+            <p class="small" style="font-size:0.9rem;">بقلم الأستاذ فهد بن علي الكريديس رحمه الله</p>
+            <p class="center bold" style="font-size:1.05rem;">بسم الله الرحمن الرحيم</p>
+            <p>الحمد لله رب العالمين، والصلاة والسلام على نبينا محمد وعلى آله وصحبه أجمعين. إن من نعم الله على عبده أن يوفقه للعمل الصالح، وأن يجعله سببًا في نفع الآخرين، وأن يرزقه الإخلاص في القول والعمل.</p>
+            <p>وقد حرصت فيها على أن تكون الأفكار قابلة للتطبيق، وأن تخدم المعلم والمتعلم معًا، وأن تسهم في بناء جيل يفكر قبل أن يجيب، ويتأمل قبل أن يحفظ.</p>
+            <p>أسأل الله أن ينفع بها، وأن يجعلها خالصة لوجهه الكريم، وأن يكتب أجرها لكل من استفاد منها أو ساهم في نشرها.</p>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">13</span></div>
+    </div>
+</section>
+
+<!-- 14 -->
+<section class="page-wrapper" data-page="14">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section center">بسم الله الرحمن الرحيم</h2>
+            <p>الحمد لله الذي علم بالقلم، علم الإنسان ما لم يعلم، والصلاة والسلام على من بعث رحمة للعالمين. العقل نعمة من نعم الله التي لا تُعد ولا تُحصى. هذه مذكرة بسيطة أسميتها «مواهب وأفكار»، خاصة بمادة العلوم للصف الأول متوسط (الفصل الدراسي الثاني)، تهدف إلى ما يلي:</p>
+            <ol style="font-size:1.02rem; line-height: 1.8;">
+                <li>غرس العقيدة الإسلامية في نفوس أبنائنا الطلاب.</li>
+                <li>معرفة بعض صفات خالقنا العظيم، ومنها الرحمة والقوة والحكمة.</li>
+                <li>تنمية مهارات التفكير الناقد.</li>
+                <li>تنمية مهارات التفكير الإبداعي.</li>
+                <li>تهيئة بعض الطلاب لمعرفة إصدار بعض المذكرات والوسائل التعليمية.</li>
+            </ol>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">14</span></div>
+    </div>
+</section>
+
+<!-- 15 -->
+<section class="page-wrapper" data-page="15">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">إليك بعض الأهداف لهذه المادة</h2>
+            <ol style="font-size: 0.95rem; line-height: 1.7;">
+                <li style="margin-bottom: 4px;">التعرف على أنواع الصخور بالتفريق بينها من خلال الخصائص العامة لها.</li>
+                <li style="margin-bottom: 4px;">وصف طبقات الأرض من خلال الرسم.</li>
+                <li style="margin-bottom: 4px;">المقارنة بين أنواع الجبال.</li>
+                <li style="margin-bottom: 4px;">تحديد وشرح كيف تتكون التربة.</li>
+                <li style="margin-bottom: 4px;">وصف الجدول الدوري مع لعبة مربعات الجدول الدوري الإبداعية.</li>
+                <li style="margin-bottom: 4px;">تصف ما هي أغلفة الأرض.</li>
+                <li style="margin-bottom: 4px;">تقارن بين الجبهات الهوائية.</li>
+                <li style="margin-bottom: 4px;">عمل نموذج مادي للمجموعة الشمسية.</li>
+                <li style="margin-bottom: 4px;">توضح الفرق بين خسوف القمر وكسوف الشمس.</li>
+                <li style="margin-bottom: 4px;">تحسب المسافة بين الشمس والقمر.</li>
+                <li style="margin-bottom: 4px;">تصف الكواكب حسب بعدها عن الشمس ومميزات كل كوكب وعدد أقماره.</li>
+            </ol>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">15</span></div>
+    </div>
+</section>
+
+<!-- 16 -->
+<section class="page-wrapper" data-page="16">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">أهم سمات التفكير</h2>
+            <table>
+                <tr><th>الطلاقة</th><th>المرونة</th><th>الأصالة</th></tr>
+                <tr><td>تعني القدرة على توليد عدد كبير من البدائل أو الأفكار بسرعة وسهولة.<br><strong>تُعنى بالكم.</strong></td><td>تعني القدرة على توليد عدد من الأفكار المتنوعة وليست متوقعة دائمًا.<br><strong>تُعنى بالكيف.</strong></td><td>تعني قدرة الفرد على إنتاج أفكار أصيلة نادرة على مدى أبعد.</td></tr>
+            </table>
+            <h2 class="section" style="margin-top:6px;">بعض الوسائل والطرق الإبداعية لمذكرة مواهب وأفكار</h2>
+            <ol style="column-count:2;line-height:1.5;font-size:0.9rem;">
+                <li>العصف الذهني.</li>
+                <li>الذكاءات المتعددة.</li>
+                <li>كورت (١) مهارة القوانين.</li>
+                <li>القبعات الست.</li>
+                <li>نظرية تريز للإبداع.</li>
+                <li>ماذا يحدث لو.</li>
+                <li>الخرائط الذهنية.</li>
+                <li>الرسم الإبداعي.</li>
+                <li>الخيال العلمي.</li>
+                <li>القصة العلمية.</li>
+            </ol>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">16</span></div>
+    </div>
+</section>
+
+<!-- 17: معلومات الدماغ -->
+<section class="page-wrapper" data-page="17">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">معلومات عن الدماغ</h2>
+            <ol style="font-size: 0.98rem; line-height: 1.75;">
+                <li style="margin-bottom: 5px;">الدماغ هو جزء من أجزاء الجهاز العصبي في الإنسان، ويتألف من المخ والمخيخ والنخاع المستطيل.</li>
+                <li style="margin-bottom: 5px;">حتى نعلّم شخصًا، لا بد من العمل على نقطتين:<br><strong>أ-</strong> إزالة المعوقات والتهديدات من بيئة المتعلم.<br><strong>ب-</strong> إثراء بيئة المتعلم.</li>
+                <li style="margin-bottom: 5px;">ينقل الدماغ حوالي ٤ ملايين رسالة عصبية في الثانية الواحدة عبر ما يقرب من ٢٠٠–٣٠٠ مليون ليف عصبي.</li>
+                <li style="margin-bottom: 5px;">النمو في الخلايا العصبية يحدث بسبب الحل وليس الوصول إلى الحل.</li>
+                <li style="margin-bottom: 5px;">التوتر المفرط والتهديد في البيئة قد يسهمان في إضعاف المتعلم.</li>
+            </ol>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">17</span></div>
+    </div>
+</section>
+
+<!-- 18: التدريب الأول -->
+<section class="page-wrapper" data-page="18">
+    <div class="frame">
+        <div class="content">
+            <p class="bold" style="font-size:1.05rem;color:#1e3a8a;">نبدأ بمشيئة الله تعالى مستعينين به سبحانه.</p>
+            <p class="small" style="font-size:0.85rem;">وتذكر أن هذه المذكرات والوسائل تربط بالمنهج، ولا يعتمد عليها وحدها في الاختبارات.</p>
+            <h2 class="section">١- مهارة العصف الذهني</h2>
+            <p>هي وسيلة للحصول على أكبر عدد من الحلول، حتى لو لم تكن واقعية، وأيضًا عدم النقد أو الحكم على الأفكار.</p>
+            <p class="bold" style="font-size:0.98rem;">مثال ١/ أعطِ عشرة (10) طرق للتخلص من التدخين:</p>
+            <div class="lines-large" style="height:22mm;"><textarea id="ans_18_1" placeholder="اكتب الطرق العشر هنا بالتفصيل..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_18_1')">💾 حفظ الإجابة</button>
+                <span id="status_ans_18_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">18</span></div>
+    </div>
+</section>
+
+<!-- 19: التدريب الثاني -->
+<section class="page-wrapper" data-page="19">
+    <div class="frame">
+        <div class="content">
+            <p class="bold" style="font-size:0.98rem;">مثال ٢/ أمامك نخلة، اكتب عشرين (20) فائدة تستطيع استخراجها من النخلة:</p>
+            <div class="lines-large" style="height:28mm;"><textarea id="ans_19_1" placeholder="اكتب الفوائد والعشرين بنداً هنا بدقة وتفصيل..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_19_1')">💾 حفظ الإجابة</button>
+                <span id="status_ans_19_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">19</span></div>
+    </div>
+</section>
+
+<!-- 20 -->
+<section class="page-wrapper" data-page="20">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">٢- مهارة (ماذا يحدث لو؟)</h2>
+            <p class="bold" style="font-size:0.95rem;">تدريب ١/ ماذا يحدث لو انطفأت الكهرباء لمدة يوم عن مدينتك؟</p>
+            <div class="lines" style="height:10mm;"><textarea id="ans_20_1" placeholder="اكتب إجابتك هنا..."></textarea></div>
+            <h2 class="section" style="margin-top:4px;">٣- مهارة: أقترح عنوانًا مرادفًا لهذا العنوان</h2>
+            <p class="bold" style="font-size:0.95rem;">تدريب ١/ لماذا ندرس العلوم؟</p>
+            <div class="lines" style="height:10mm;"><textarea id="ans_20_2" placeholder="اكتب العناوين المقترحة هنا..."></textarea></div>
+            <h2 class="section" style="margin-top:4px;">٤- مهارة اكتشاف الخطأ</h2>
+            <p class="bold" style="font-size:0.95rem;">مثال ١/ وزني هو ٧٠ كجم.</p>
+            <div class="lines" style="height:10mm;"><textarea id="ans_20_3" placeholder="اكتب اكتشافك للخطأ هنا..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers(['ans_20_1', 'ans_20_2', 'ans_20_3'])">💾 حفظ الإجابات</button>
+                <span id="status_ans_20_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">20</span></div>
+    </div>
+</section>
+
+<!-- 21 -->
+<section class="page-wrapper" data-page="21">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">الخرائط الذهنية</h2>
+            <p class="small">تستخدم استراتيجية الخرائط الذهنية في حل المشكلات.</p>
+            <p class="bold" style="font-size:0.95rem;">مثال ١/ طفلة مصابة بفقر الدم ولا تستطيع إلا شرب الماء:</p>
+            <div class="info-box center" style="padding:4px;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+                    <input type="text" id="ans_21_1" class="interactive-input" placeholder="الحل الأول..." style="margin:0">
+                    <input type="text" id="ans_21_2" class="interactive-input" placeholder="الحل الثاني..." style="margin:0">
+                </div>
+            </div>
+            <p class="bold" style="font-size:0.95rem;margin-top:6px;">تدريب ٢/ فروع مادة العلوم:</p>
+            <div class="info-box center" style="padding:4px;">
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+                    <input type="text" id="ans_21_3" class="interactive-input" placeholder="الفرع 1" style="margin:0">
+                    <input type="text" id="ans_21_4" class="interactive-input" placeholder="الفرع 2" style="margin:0">
+                    <input type="text" id="ans_21_5" class="interactive-input" placeholder="الفرع 3" style="margin:0">
+                </div>
+            </div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers(['ans_21_1', 'ans_21_2', 'ans_21_3', 'ans_21_4', 'ans_21_5'])">💾 حفظ الإجابات</button>
+                <span id="status_ans_21_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">21</span></div>
+    </div>
+</section>
+
+<!-- 22: لوحة الرسم -->
+<section class="page-wrapper" data-page="22">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">استراتيجية الخيال العلمي</h2>
+            <p class="small">تساعد على اكتشاف العلوم.</p>
+            <p class="bold" style="font-size:0.95rem;">تدريب ١/ هل تساعد في علاج مشكلة الفشل الكلوي؟</p>
+            <div class="lines" style="height:10mm;"><textarea id="ans_22_1" placeholder="اكتب فكرتك العلمية هنا..."></textarea></div>
+            <p class="bold" style="font-size:0.95rem;margin-top:2px;">أنشئ شكلًا جديدًا من خطين متوازيين (ارسم هنا):</p>
+            <canvas class="drawing-canvas" id="drawCanvas" style="height:22mm;"></canvas>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_22_1')">💾 حفظ الرسم</button>
+                <span id="status_ans_22_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">22</span></div>
+    </div>
+</section>
+
+<!-- 23 -->
+<section class="page-wrapper" data-page="23">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">مهارة الكورت (توسعة الإدراك)</h2>
+            <p class="bold" style="font-size:0.95rem;">مثال ١: قوانين وزارة البيئة للمحافظة على البيئة:</p>
+            <div class="lines" style="height:12mm;"><textarea id="ans_23_1" placeholder="اكتب القوانين هنا..."></textarea></div>
+            <p class="bold" style="font-size:0.95rem;">مثال ٢: أفكار للحد من الإضرار بالنبات:</p>
+            <div class="lines" style="height:12mm;"><textarea id="ans_23_2" placeholder="اكتب الأفكار هنا..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers(['ans_23_1', 'ans_23_2'])">💾 حفظ الإجابات</button>
+                <span id="status_ans_23_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">23</span></div>
+    </div>
+</section>
+
+<!-- 24 -->
+<section class="page-wrapper" data-page="24">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">القبعات الست</h2>
+            <p class="small">لتنظيم التفكير واتخاذ القرار.</p>
+            <p class="bold" style="font-size:0.95rem;margin-top:4px;">تدريب ١/ أسرة تريد قضاء إجازة في الرياض. ادرس القرار:</p>
+            <div class="lines-large" style="height:28mm;"><textarea id="ans_24_1" placeholder="طبق القبعات الست هنا..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_24_1')">💾 حفظ الإجابة</button>
+                <span id="status_ans_24_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">24</span></div>
+    </div>
+</section>
+
+<!-- 25 -->
+<section class="page-wrapper" data-page="25">
+    <div class="frame">
+        <div class="content">
+            <table style="font-size:0.9rem;"><tr><th>م</th><th>الجملة</th><th>نوع القبعة</th></tr><tr><td>١</td><td>إن نصف الكوب ممتلئ</td><td><input type="text" id="ans_25_1" class="interactive-input" style="margin:0" placeholder="نوع القبعة"></td></tr><tr><td>٢</td><td>سنخسر كثيرًا</td><td><input type="text" id="ans_25_2" class="interactive-input" style="margin:0" placeholder="نوع القبعة"></td></tr><tr><td>٣</td><td>دعنا نلخص النتيجة النهائية</td><td><input type="text" id="ans_25_3" class="interactive-input" style="margin:0" placeholder="نوع القبعة"></td></tr><tr><td>٤</td><td>لدي الكثير من الأفكار</td><td><input type="text" id="ans_25_4" class="interactive-input" style="margin:0" placeholder="نوع القبعة"></td></tr><tr><td>٥</td><td>عدد الفقرات ٣٦٠ مفصلًا</td><td><input type="text" id="ans_25_5" class="interactive-input" style="margin:0" placeholder="نوع القبعة"></td></tr></table>
+            <p class="bold" style="font-size:0.95rem;margin-top:6px;">تدريب ٢/ مارس مهارة القبعة الصفراء والبيضاء:</p>
+            <div class="lines" style="height:12mm;"><textarea id="ans_25_6" placeholder="اكتب إجابتك هنا..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers(['ans_25_1', 'ans_25_2', 'ans_25_3', 'ans_25_4', 'ans_25_5', 'ans_25_6'])">💾 حفظ الإجابات</button>
+                <span id="status_ans_25_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">25</span></div>
+    </div>
+</section>
+
+<!-- 26 -->
+<section class="page-wrapper" data-page="26">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">نظرية تريز للتفكير الإبداعي</h2>
+            <p class="center gold bold" style="font-size:1.1rem;color:#b8860b;margin:4px 0;">«لا تحقرن صغيرةً إن الجبال من الحصى»</p>
+            <p class="small">ما العلاقة بين هذا البيت ومبدأ التقسيم؟</p>
+            <div class="lines-large" style="height:28mm;"><textarea id="ans_26_1" placeholder="اكتب تحليلك الإبداعي هنا..."></textarea></div>
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_26_1')">💾 حفظ الإجابة</button>
+                <span id="status_ans_26_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">26</span></div>
+    </div>
+</section>
+
+<!-- 27 -->
+<section class="page-wrapper" data-page="27">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">تطبيقات نظرية تريز للإبداع</h2>
+            
+            <p style="font-size:0.98rem; margin-bottom: 5px;"><strong>٢- مبدأ الجودة المكانية:</strong> تحسين نوعية الأداء.</p>
+            <p style="font-size:0.98rem; margin-bottom: 5px;"><strong>٣- مبدأ التعشيش:</strong> احتواء شيء داخل شيء.</p>
+            <p style="font-size:0.98rem; margin-bottom: 8px;"><strong>٤- مبدأ الحيطة:</strong> المواجهة المسبقة للاختلالات.</p>
+            
+            <div style="margin-top: 8px;">
+                <p class="bold" style="font-size:0.95rem; margin-bottom: 5px; color:#1e3a8a;">تدريب/ طالب لا يهوى الدراسة، كيف تحسن رغبته مستخدماً أحد المبادئ السابقة؟</p>
+                <div class="lines-large" style="height:28mm;"><textarea id="ans_27_1" placeholder="اكتب فكرتك التربوية هنا بالتفصيل..."></textarea></div>
+            </div>
+
+            <div class="action-box">
+                <button class="action-btn" onclick="savePageAnswers('ans_27_1')">💾 حفظ الإجابة</button>
+                <span id="status_ans_27_1" class="save-indicator">تم الحفظ ✓</span>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">27</span></div>
+    </div>
+</section>
+
+<!-- 28: صفحة التصدير -->
+<section class="page-wrapper" data-page="28">
+    <div class="frame">
+        <div class="content">
+            <h2 class="section">القصة العلمية وخيارات الحفظ</h2>
+            <p class="bold" style="font-size:0.95rem;">- أذكر تسعة أشياء لها علاقة بالصخور:</p>
+            <div class="lines" style="height:12mm;"><textarea id="ans_28_1" placeholder="اكتب الأشياء هنا..."></textarea></div>
+            <p class="bold" style="font-size:0.95rem;margin-top:6px;">- جدول التقدير الذاتي:</p>
+            <table style="font-size:0.9rem;">
+                <tr><th style="width:33%;">ماذا أعرف</th><th style="width:33%;">أسئلتي</th><th style="width:34%;">ماذا تعلمت</th></tr>
+                <tr>
+                    <td style="height:16mm;"><textarea id="ans_28_2" class="interactive-input" style="height:14mm; border:none; background:transparent;" placeholder="اكتب..."></textarea></td>
+                    <td style="height:16mm;"><textarea id="ans_28_3" class="interactive-input" style="height:14mm; border:none; background:transparent;" placeholder="اكتب..."></textarea></td>
+                    <td style="height:16mm;"><textarea id="ans_28_4" class="interactive-input" style="height:14mm; border:none; background:transparent;" placeholder="اكتب..."></textarea></td>
+                </tr>
+            </table>
+            
+            <div style="background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;padding:8px;margin-top:8px;text-align:center;">
+                <div style="font-size:0.95rem;font-weight:bold;color:#1e3a8a;margin-bottom:6px;">📋 إدارة الإجابات والنسخ الاحتياطي:</div>
+                <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+                    <button class="action-btn" onclick="exportMyAnswers()" style="background:#b8860b;">📥 تنزيل كل إجاباتك كملف</button>
+                    <label class="action-btn import" style="cursor:pointer;">
+                        📤 استرجاع من ملف <input type="file" id="importFile" accept=".json" style="display:none" onchange="importMyAnswers(event)">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">28</span></div>
+    </div>
+</section>
+
+<!-- 29: صفحة التأبين وترك الأثر -->
+<section class="page-wrapper" data-page="29">
+    <div class="frame">
+        <div class="content" style="display:flex; flex-direction:column; height:100%;">
+            <h2 class="section center" style="color:#1e3a8a;">💭 سجّل كلمتك.. أو دعاءك لفقيدنا الغالي</h2>
+            <p class="center" style="font-size:0.95rem;">شاركنا دعاءً، أو موقفاً، أو كلمة وفاء بحق الأستاذ فهد علي الكريديس رحمه الله:</p>
+            
+            <div style="margin-top:4px;">
+                <textarea id="tributeText" style="width:100%;height:16mm;border:1.5px solid #cbd5e1;border-radius:6px;background:#fffdf9;padding:6px;font-family:inherit;font-size:0.95rem;resize:none;" placeholder="اكتب دعاءً أو موقفاً جميلاً..."></textarea>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;flex-wrap:wrap;">
+                <select id="tributeType" style="padding:5px 8px;border-radius:6px;border:1.5px solid #cbd5e1;font-family:inherit;font-size:0.9rem;">
+                    <option value="public">🌐 مشاركة عامة (تظهر لجميع الزوار)</option>
+                    <option value="private">🔒 حفظ سري (خاص بي وحدي)</option>
+                </select>
+                <button class="action-btn" onclick="saveTribute()" style="margin:0; padding:5px 14px; font-size:0.95rem;">اِجعل أثر فهد باقياً 🤍</button>
+            </div>
+            <div id="tributeMsg" style="color:#16a34a;font-size:0.85rem;font-weight:bold;text-align:center;min-height:14px;margin-top:4px;"></div>
+
+            <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:6px;margin-top:6px;flex:1;overflow:hidden;display:flex;flex-direction:column;">
+                <div style="font-size:0.9rem;font-weight:bold;color:#1e3a8a;margin-bottom:3px;border-bottom:1px solid #cbd5e1;padding-bottom:3px;">📜 سجل الوفاء والدعاء (الخاص والعام):</div>
+                <div id="tributeList" style="flex:1;overflow-y:auto;font-size:0.9rem;color:#475569;line-height:1.5;padding-top:4px;"></div>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">29</span></div>
+    </div>
+</section>
+
+<!-- 30: الخاتمة -->
+<section class="page-wrapper" data-page="30">
+    <div class="frame">
+        <div class="content centered">
+            <h1 style="font-size:2.2rem;color:#1e3a8a;">الخاتمة</h1>
+            <p style="font-size:1.05rem;line-height:1.8;">وفي ختام هذا الكتيّب، لا يمكن أن تُختصر سيرة فهد الكريديس في صفحات؛ فبعض الرجال يتركون أثرهم في الناس قبل أن تترك أسماؤهم أثرها في الأوراق.</p>
+            <p style="font-size:1.05rem;line-height:1.8;">فطيلة مسيرته، لم يكن شغفه بالتعلّم متوقفًا، فقد خاض ما يقارب مئتي دورة تدريبية، وأصبح معلّمًا ومدربًا معتمدًا.</p>
+            <p style="font-size:1.05rem;line-height:1.8;">وما هذا الكتيّب إلا محاولة متواضعة لردّ شيء من الجميل، وتوثيق جزء من سيرة رجلٍ كان له أثر فيمن حوله وفي طلابه.</p>
+            <div class="quote" style="margin-top:6px;padding:8px;">
+                <strong class="gold" style="font-size:1.2rem;color:#b8860b;">فهد الكريديس…</strong>
+                <p class="center bold" style="font-size:1rem;margin-top:4px;">رجلٌ آمن بالعلم، فتعلّمه، ثم علّمه، وآمن بالإنسان، فترك فيه أثرًا.</p>
+            </div>
+        </div>
+        <div class="footer"><span>مواهب و أفكار</span><span class="num">30</span></div>
+    </div>
+</section>
+
+</div>
+
+<!-- أزرار التنقل السفلية -->
+<div class="nav-bar">
+    <button class="nav-btn" onclick="prevPage()">▶ السابق</button>
+    <button class="nav-btn home" onclick="goToPage(1)">🏠 الرئيسية</button>
+    <span class="page-indicator" id="pageIndicator">الصفحة 1 من 30</span>
+    <button class="nav-btn" onclick="nextPage()">التالي ◀</button>
+</div>
+
+<!-- مكتبة ونظام التفاعل السحابي للعداد والحقيقي والمنتدى -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+import { getFirestore, doc, setDoc, getDoc, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+const firebaseConfig = JSON.parse(__firebase_config);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const appId = typeof __app_id !== 'undefined' ? __app_id : 'fahad-book-app';
+
+let currentUser = null;
+
+async function initFirebase() {
+    try {
+        await signInAnonymously(auth);
+    } catch(e) {}
+}
+initFirebase();
+
+onAuthStateChanged(auth, (user) => {
+    if(!user) return;
+    currentUser = user;
+    
+    let localDeviceId = localStorage.getItem('fahad_device_id');
+    if (!localDeviceId) {
+        localDeviceId = 'DEV_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('fahad_device_id', localDeviceId);
+    }
+    
+    trackCloudVisitor(localDeviceId);
+    syncCloudTributes();
+});
+
+async function trackCloudVisitor(deviceId) {
+    try {
+        const statsRef = doc(db, 'artifacts', appId, 'public', 'data', 'stats', 'visitors_summary');
+        const userVisitRef = doc(db, 'artifacts', appId, 'public', 'data', 'unique_devices', deviceId);
+        
+        const visitSnap = await getDoc(userVisitRef);
+        if (!visitSnap.exists()) {
+            await setDoc(userVisitRef, { visitedAt: new Date().toISOString() });
+            
+            const statsSnap = await getDoc(statsRef);
+            let total = 1;
+            let comp = 0;
+            if(statsSnap.exists()){
+                total = (statsSnap.data().totalVisitors || 0) + 1;
+                comp = statsSnap.data().completedVisitors || 0;
+            }
+            await setDoc(statsRef, { totalVisitors: total, completedVisitors: comp }, { merge: true });
+        }
+        
+        onSnapshot(statsRef, (docSnap) => {
+            if(docSnap.exists()){
+                let data = docSnap.data();
+                let vEl = document.getElementById('liveVisitors');
+                let cEl = document.getElementById('liveCompleted');
+                if(vEl) vEl.innerText = data.totalVisitors || 1;
+                if(cEl) cEl.innerText = data.completedVisitors || 0;
+            }
+        });
+    } catch(e) {}
+}
+
+window.incrementCloudCompleted = async function() {
+    if(!currentUser) return;
+    try {
+        const statsRef = doc(db, 'artifacts', appId, 'public', 'data', 'stats', 'visitors_summary');
+        const statsSnap = await getDoc(statsRef);
+        let total = 1;
+        let comp = 1;
+        if(statsSnap.exists()){
+            total = statsSnap.data().totalVisitors || 1;
+            comp = (statsSnap.data().completedVisitors || 0) + 1;
+        }
+        await setDoc(statsRef, { totalVisitors: total, completedVisitors: comp }, { merge: true });
+    } catch(e) {}
+};
+
+window.saveTributeToCloud = async function(text, type) {
+    let msg = document.getElementById('tributeMsg');
+    if (type === 'public') {
+        try {
+            const tributesCol = collection(db, 'artifacts', appId, 'public', 'data', 'community_tributes');
+            await addDoc(tributesCol, {
+                text: text,
+                date: new Date().toLocaleDateString('ar-SA'),
+                createdAt: new Date().toISOString()
+            });
+            msg.style.color = '#16a34a';
+            msg.innerText = "✨ تم نشر أثرك العام بنجاح لجميع الزوار!";
+        } catch(e) {
+            msg.style.color = '#dc2626';
+            msg.innerText = "حدث خطأ أثناء النشر، حاول مجدداً.";
+        }
+    } else {
+        let tributes = JSON.parse(localStorage.getItem('fahad_book_private_tributes') || '[]');
+        tributes.unshift({ text: text, date: new Date().toLocaleDateString('ar-SA') });
+        localStorage.setItem('fahad_book_private_tributes', JSON.stringify(tributes));
+        msg.style.color = '#2563eb';
+        msg.innerText = "🔒 تم حفظ رسالتك السرية على هذا الجهاز فقط.";
+    }
+    loadTributes();
+};
+
+function syncCloudTributes() {
+    try {
+        const tributesCol = collection(db, 'artifacts', appId, 'public', 'data', 'community_tributes');
+        onSnapshot(tributesCol, (snapshot) => {
+            window.cloudPublicTributes = [];
+            snapshot.forEach(docSnap => {
+                window.cloudPublicTributes.push(docSnap.data());
+            });
+            window.cloudPublicTributes.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+            loadTributes();
+        });
+    } catch(e) {}
+}
+</script>
+
+<script>
+let currentPage = 1;
+const totalPages = 30;
+
+function showPage(page) {
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
+    currentPage = page;
+
+    document.querySelectorAll('.page-wrapper').forEach(el => {
+        el.classList.remove('active');
+    });
+
+    const activeEl = document.querySelector(`.page-wrapper[data-page="${currentPage}"]`);
+    if (activeEl) {
+        activeEl.classList.add('active');
+        if (currentPage === 22) {
+            setTimeout(resizeCanvas, 50);
+        }
+    }
+
+    document.getElementById('pageIndicator').innerText = `الصفحة ${currentPage} من 30`;
+}
+
+function nextPage() { if (currentPage < totalPages) showPage(currentPage + 1); }
+function prevPage() { if (currentPage > 1) showPage(currentPage - 1); }
+function goToPage(page) { showPage(page); }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let deviceId = localStorage.getItem('fahad_device_id');
+    if (!deviceId) {
+        deviceId = 'DEV_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('fahad_device_id', deviceId);
+    }
+    
+    loadAllSavedAnswers();
+    loadTributes();
+    setupPointerCanvas();
+});
+
+function startMode(mode) {
+    let status = document.getElementById('modeStatus');
+    let userAction = localStorage.getItem('fahad_book_user_action');
+    if(!userAction) {
+        if(mode === 'contest') {
+            if(window.incrementCloudCompleted) window.incrementCloudCompleted();
+            if(status) status.innerHTML = "✅ تم تسجيل مشاركتك بنجاح!";
+        } else {
+            if(status) status.innerHTML = "📖 أهلاً بك! تم تفعيل وضع القراءة.";
+        }
+        localStorage.setItem('fahad_book_user_action', mode);
+    } else {
+        if(status) status.innerHTML = "✨ زيارتك مسجلة مسبقاً في هذا الجهاز.";
+    }
+}
+
+function savePageAnswers(fieldIds) {
+    if (typeof fieldIds === 'string') fieldIds = [fieldIds];
+    let deviceId = localStorage.getItem('fahad_device_id');
+    
+    fieldIds.forEach(id => {
+        let el = document.getElementById(id);
+        if (el) localStorage.setItem(`fahad_book_ans_${deviceId}_` + id, el.value);
+    });
+    
+    let canvas = document.getElementById('drawCanvas');
+    if (canvas) localStorage.setItem(`fahad_book_canvas_${deviceId}`, canvas.toDataURL());
+
+    let statusEl = document.getElementById('status_' + fieldIds[0]);
+    if (statusEl) {
+        statusEl.classList.add('show');
+        setTimeout(() => statusEl.classList.remove('show'), 2000);
+    } else {
+        alert("تم حفظ الإجابة بنجاح 💾");
+    }
+}
+
+function loadAllSavedAnswers() {
+    let deviceId = localStorage.getItem('fahad_device_id');
+    const fields = document.querySelectorAll('textarea, input.interactive-input');
+    fields.forEach(field => {
+        if (!field.id) return;
+        let saved = localStorage.getItem(`fahad_book_ans_${deviceId}_` + field.id);
+        if (saved !== null) field.value = saved;
+    });
+
+    let savedCanvas = localStorage.getItem(`fahad_book_canvas_${deviceId}`);
+    if (savedCanvas) {
+        let canvas = document.getElementById('drawCanvas');
+        if (canvas) {
+            let ctx = canvas.getContext('2d');
+            let img = new Image();
+            img.onload = () => ctx.drawImage(img, 0, 0);
+            img.src = savedCanvas;
+        }
+    }
+}
+
+function exportMyAnswers() {
+    let deviceId = localStorage.getItem('fahad_device_id');
+    const fields = document.querySelectorAll('textarea, input.interactive-input');
+    let data = {};
+    fields.forEach(f => {
+        if (f.id && f.value) data[f.id] = f.value;
+    });
+    
+    const canvas = document.getElementById('drawCanvas');
+    if (canvas) data['drawing_canvas_data'] = canvas.toDataURL();
+    
+    let dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+    let dlAnchorElem = document.createElement('a');
+    dlAnchorElem.setAttribute("href", dataStr);
+    dlAnchorElem.setAttribute("download", `Fahad_Book_Answers.json`);
+    document.body.appendChild(dlAnchorElem);
+    dlAnchorElem.click();
+    dlAnchorElem.remove();
+}
+
+function importMyAnswers(event) {
+    let file = event.target.files[0];
+    if (!file) return;
+    let deviceId = localStorage.getItem('fahad_device_id');
+    let reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            let data = JSON.parse(e.target.result);
+            for (let id in data) {
+                if (id === 'drawing_canvas_data') {
+                    let canvas = document.getElementById('drawCanvas');
+                    if (canvas) {
+                        let ctx = canvas.getContext('2d');
+                        let img = new Image();
+                        img.onload = () => ctx.drawImage(img, 0, 0);
+                        img.src = data[id];
+                        localStorage.setItem(`fahad_book_canvas_${deviceId}`, data[id]);
+                    }
+                } else {
+                    let el = document.getElementById(id);
+                    if (el) {
+                        el.value = data[id];
+                        localStorage.setItem(`fahad_book_ans_${deviceId}_` + id, data[id]);
+                    }
+                }
+            }
+            alert("📂 تم استرجاع الإجابات بنجاح!");
+        } catch (err) {
+            alert("❌ ملف غير صالح.");
+        }
+    };
+    reader.readAsText(file);
+}
+
+function saveTribute() {
+    let text = document.getElementById('tributeText').value.trim();
+    let type = document.getElementById('tributeType').value;
+    let msg = document.getElementById('tributeMsg');
+
+    if(!text) {
+        msg.style.color = '#dc2626';
+        msg.innerHTML = "الرجاء كتابة دعاء أو كلمة أولاً.";
+        return;
+    }
+
+    if(window.saveTributeToCloud) {
+        window.saveTributeToCloud(text, type);
+    }
+    
+    document.getElementById('tributeText').value = "";
+    setTimeout(() => { msg.innerHTML = ""; }, 3000);
+}
+
+function loadTributes() {
+    let list = document.getElementById('tributeList');
+    if (!list) return;
+    list.innerHTML = "";
+    
+    let publicTributes = window.cloudPublicTributes || [];
+    let privateTributes = JSON.parse(localStorage.getItem('fahad_book_private_tributes') || '[]');
+    
+    let allTributes = [
+        ...publicTributes.map(t => ({...t, badge: '🌐 عام'})),
+        ...privateTributes.map(t => ({...t, badge: '🔒 سري'}))
+    ];
+
+    if (allTributes.length === 0) {
+        list.innerHTML = "<div style='text-align:center; color:#94a3b8; margin-top:10px;'>لا يوجد أثر مسجل بعد. كن أول من يكتب دعاءً أو كلمة وفاء.</div>";
+        return;
+    }
+
+    allTributes.forEach(t => {
+        let p = document.createElement('div');
+        p.style.background = "#fff";
+        p.style.border = "1px solid #e2e8f0";
+        p.style.padding = "8px";
+        p.style.borderRadius = "6px";
+        p.style.marginBottom = "8px";
+        
+        let header = document.createElement('div');
+        header.style.fontSize = "11px";
+        header.style.color = "#64748b";
+        header.style.marginBottom = "4px";
+        header.innerHTML = `<b>${t.badge}</b> - ${t.date || ''}`;
+        
+        let body = document.createElement('div');
+        body.style.color = "#1e293b";
+        body.style.fontSize = "13px";
+        body.style.lineHeight = "1.6";
+        body.textContent = t.text;
+
+        p.appendChild(header);
+        p.appendChild(body);
+        list.appendChild(p);
+    });
+}
+
+function setupPointerCanvas() {
+    const canvas = document.getElementById('drawCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+
+    function initSize() {
+        let rect = canvas.getBoundingClientRect();
+        if (rect.width > 0) {
+            canvas.width = rect.width;
+            canvas.height = rect.height || 100;
+        }
+    }
+    initSize();
+
+    canvas.addEventListener('pointerdown', (e) => {
+        drawing = true;
+        ctx.beginPath();
+        let rect = canvas.getBoundingClientRect();
+        ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+        e.preventDefault();
+    });
+
+    canvas.addEventListener('pointermove', (e) => {
+        if (!drawing) return;
+        let rect = canvas.getBoundingClientRect();
+        ctx.lineWidth = 2.5;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#1e3a8a';
+        ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+        ctx.stroke();
+        e.preventDefault();
+    });
+
+    canvas.addEventListener('pointerup', () => { drawing = false; });
+    canvas.addEventListener('pointercancel', () => { drawing = false; });
+}
+
+function resizeCanvas() {
+    const canvas = document.getElementById('drawCanvas');
+    if (canvas) {
+        let rect = canvas.getBoundingClientRect();
+        if (rect.width > 0) {
+            let saved = canvas.toDataURL();
+            canvas.width = rect.width;
+            canvas.height = rect.height || 100;
+            
+            let ctx = canvas.getContext('2d');
+            let img = new Image();
+            img.onload = () => ctx.drawImage(img, 0, 0);
+            img.src = saved;
+        }
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') prevPage();
+    if (e.key === 'ArrowLeft') nextPage();
+});
+</script>
+
+</body>
+</html>
+
